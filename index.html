@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone hunter !!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-info fs-1 fw-bold my-5">Phone hunter !!</h1>
+    </header>
+    <div>
+        <div class="container-fluid d-flex w-25 text-center">
+            <input id="search-feild" class="form-control me-2" placeholder="Search">
+            <button id="phone-btn" class="btn btn-info fw-bold" type="submit">Search</button>
+
+        </div>
+    </div>
+    <section class="mb-5">
+        <div id="phone-container" class="row  m-auto container row-cols-sm-1 row-cols-md-2 row-cols-lg-3  g-4">
+
+        </div>
+        <div id="show-all" class="text-center my-4 d-none">
+            <button id="show-btn" class="btn btn-info fw-bold">Show all !!</button>
+        </div>
+        <div id="no-found" class="d-none ">
+            <h3 class="text-center text-black-50 my-4">404 not found anything !!</h3>
+        </div>
+        <div id="found-phone">
+            <h3 class="text-center text-black-50 my-4">Please search phone or watch by name !!!</h3>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="loadMoreDetails" tabindex="-1" aria-labelledby="loadMoreDetailsLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loadMoreDetailsLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modal-body" class="modal-body mx-4">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info fw-bold mx-4 mb-4 w-100"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------loader----------------- -->
+    <section id="loder" class="d-none">
+        <div class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
